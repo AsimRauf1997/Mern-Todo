@@ -60,6 +60,11 @@ body {
   margin-top: 10px;
   color: #ffffff;
 }
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
 .btn:hover {
   background-color: #f76444;
 }

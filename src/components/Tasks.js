@@ -39,7 +39,7 @@ useEffect(()=>{
           </>
         )}
         
-        <div style={{display:'flex', justifyContent:'space-evenly', marginTop:'10px'}}>
+        <div className='btn-container'>
         <button className='btn' onClick={()=> updateTask(task._id,task.title, task.description)}>Edit</button>
         <button className='btn' onClick={()=>deleteTask(task._id)}>Delete</button>
         </div>

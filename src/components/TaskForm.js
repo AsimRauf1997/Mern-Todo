@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import '../App.css';
 import Tasks from './Tasks';
 
-const TaskForm = ({title, setTitle, description, setDescription}) => {
-  const [isUpdating, setIsUpdating] = useState(false)
-  const [id, setId] = useState('')
+const TaskForm = ({title, setTitle, description, setDescription, isUpdating, setIsUpdating, id, setId}) => {
    const addUpdateTask = () => {
         if(isUpdating===false){
           fetch('http://localhost:8001/api/todo/', {

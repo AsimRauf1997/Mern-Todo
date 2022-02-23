@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 import TaskForm from './components/TaskForm'
 function App() {
+  const [isUpdating, setIsUpdating] = useState(false)
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  const [update, setUpdate] = useState('')
+  const [id, setId] = useState('')
   return (
     <div className='container'>
       <TaskForm 
@@ -12,8 +13,10 @@ function App() {
       setTitle={setTitle} 
       description={description} 
       setDescription={setDescription}
-      update={update}
-      setUpdate={setUpdate}
+      isUpdating={isUpdating}
+      setIsUpdating={setIsUpdating}
+      id= {id}
+      setId ={setId}
       />
     </div>
      
