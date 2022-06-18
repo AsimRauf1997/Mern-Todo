@@ -68,7 +68,10 @@ body {
 .btn:hover {
   background-color: #f76444;
 }
-
+.loader {
+  position: relative;
+  left: 50%;
+}
 ::placeholder {
   color: #ffffff;
 }
