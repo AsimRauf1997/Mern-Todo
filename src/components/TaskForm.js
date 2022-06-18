@@ -14,7 +14,7 @@ const TaskForm = ({
 }) => {
   const addUpdateTask = () => {
     if (isUpdating === false) {
-      fetch("http://localhost:8001/api/todo/", {
+      fetch("https://node-js-todo-app.herokuapp.com/api/todo/", {
         method: "POST",
         mode: "cors",
         headers: {
@@ -35,7 +35,7 @@ const TaskForm = ({
           alert(err);
         });
     } else {
-      fetch(`http://localhost:8001/api/todo/${id}`, {
+      fetch(`https://node-js-todo-app.herokuapp.com/api/todo/${id}`, {
         method: "PUT",
         mode: "cors",
         headers: {
@@ -54,7 +54,7 @@ const TaskForm = ({
     }
   };
   const deleteTask = (id) => {
-    fetch(`http://localhost:8001/api/todo/${id}`, {
+    fetch(`https://node-js-todo-app.herokuapp.com/api/todo/${id}`, {
       method: "DELETE",
     }).then(function (response) {
       console.log("Response", response);

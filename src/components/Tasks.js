@@ -5,7 +5,7 @@ const Tasks = ({ deleteTask, updateTask }) => {
   const [loading, setLoading] = useState(true);
   const getTasks = () => {
     try {
-      fetch("http://localhost:8001/api/todo/", {
+      fetch("https://node-js-todo-app.herokuapp.com/api/todo/", {
         method: "GET",
       })
         .then(function (response) {
